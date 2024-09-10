@@ -12,8 +12,8 @@
 // }
 AMG8833::AMG8833(void){
   memset(rawRect, 0, sizeof(unsigned int) * AMG8833_PIXEL_ARRAY_SIZE);
-	memset(realRect, 0, sizeof(double) * AMG8833_PIXEL_ARRAY_SIZE);
-  //防止矩阵干扰
+  memset(realRect, 0, sizeof(double) * AMG8833_PIXEL_ARRAY_SIZE);
+  //初始化，防止内存干扰数据
 }
 
 bool AMG8833::write8(uint8_t val){
